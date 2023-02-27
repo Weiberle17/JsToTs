@@ -1,0 +1,54 @@
+[
+  {
+    "key": "anrede",
+    "label": "Anrede",
+    "value": ""
+  },
+  {
+    "key": "firstname",
+    "label": "Vorname",
+    "value": "",
+    "required": true
+  },
+  {
+    "key": "lastname",
+    "label": "Nachname",
+    "value": "",
+    "required": true
+  },
+  {
+    "key": "email",
+    "label": "E-Mail",
+    "value": "",
+    "required": true,
+    "type": "email",
+    "error": false,
+    "text": ""
+  },
+  {
+    "key": "password",
+    "label": "Passwort",
+    "value": "",
+    "required": true,
+    "type": "password"
+  },
+  {
+    "key": "ags",
+    "label": "AGS",
+    "value": "",
+    "type": "ags",
+    "required": true
+  },
+  {
+    "key": "okz",
+    "label": "Ortskennzeichen (OKZ)",
+    "value": "",
+    "type": "okz"
+  },
+  {
+    "key": "telefon",
+    "label": "Telefon",
+    "value": "",
+    "type": "tel"
+  }
+]

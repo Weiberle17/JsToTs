@@ -1,0 +1,32 @@
+{
+  "tags": {
+    "allowUnknownTags": true,
+    "dictionaries": [
+      "jsdoc",
+      "closure"
+    ]
+  },
+  "source": {
+    "include": [
+      "src"
+    ],
+    "includePattern": ".+\\.js(doc|x)?$",
+    "excludePattern": "(^|\\/|\\\\)_"
+  },
+  "plugins": [
+    "plugins/markdown",
+    "node_modules/better-docs/component"
+  ],
+  "templates": {
+    "better-docs": {
+      "name": "BEA Port Components"
+    }
+  },
+  "opts": {
+    "destination": "docs",
+    "encoding": "utf8",
+    "recurse": true,
+    "readme": "README.md",
+    "template": "node_modules/better-docs"
+  }
+}

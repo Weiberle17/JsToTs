@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "DM Sans";
+    src: url('Resources/fonts/dm-sans-v4-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url('Resources/fonts/Roboto-Regular.woff2') format('woff2');
+}
+
+a {
+    text-decoration: none !important;
+}
+
+h1 {
+    font-size: 10px;
+}

@@ -1,0 +1,600 @@
+[
+  {
+    "label": "Einleitung",
+    "text": [
+      {
+        "text": "Willkommen in der automatisierten zuständigkeitsfinderbasierten dezentralen Antragsdatenerfassung."
+      },
+      {
+        "text": "1. Bitte geben Sie an welche Leistung Sie in Anspruch nehmen möchten und klicken Sie anschließend auf 'Leistung ermitteln'."
+      },
+      {
+        "text": "2. Klicken Sie bitte auf 'Nächster Schritt', wenn Sie mit der ermittelten Leistung zufrieden sind. Wiederholen Sie andernfalls Schritt 1 in anderen Worten."
+      }
+    ],
+    "fields": [
+      {
+        "label": "Welche Leistung möchten Sie in Anspruch nehmen?",
+        "key": "query_leistung",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "label": "Ausweisdaten",
+    "text": [
+      {
+        "text": "In diesem Schritt ist es erforderlich, dass Sie sich mit Ihrem E-Ausweis ausweisen."
+      },
+      {
+        "text": "1. Bitte klicken Sie dazu auf 'E-Ausweis' auslesen."
+      },
+      {
+        "text": "2. Klicken Sie bitte auf 'Nächster Schritt', sobald alle Felder automatisch ausgefüllt wurden."
+      }
+    ],
+    "services": [
+      {
+        "name": "Hauptwohnsitz anmelden",
+        "fields": [
+          {
+            "key": "Vorname",
+            "label": "Vorname",
+            "value": ""
+          },
+          {
+            "key": "Geburtsname",
+            "label": "Geburtsname",
+            "value": ""
+          },
+          {
+            "key": "Familienname/Doktorgrad",
+            "label": "Familienname/Doktorgrad",
+            "value": ""
+          },
+          {
+            "key": "Straße",
+            "label": "Straße",
+            "value": ""
+          },
+          {
+            "key": "Hausnummer",
+            "label": "Hausnummer",
+            "value": ""
+          },
+          {
+            "key": "Postleitzahl",
+            "label": "Postleitzahl",
+            "value": ""
+          },
+          {
+            "key": "Gemeinde",
+            "label": "Gemeinde",
+            "value": ""
+          },
+          {
+            "key": "Geburtsdatum",
+            "label": "Geburtsdatum",
+            "type": "date",
+            "value": ""
+          },
+          {
+            "key": "Geschlecht",
+            "label": "Geschlecht",
+            "value": ""
+          },
+          {
+            "key": "Geburtsort",
+            "label": "Geburtsort",
+            "value": ""
+          },
+          {
+            "key": "Staatsangehörigkeiten",
+            "label": "Staatsangehörigkeiten",
+            "value": ""
+          },
+          {
+            "key": "Ausstellungsbehörde des Personalausweises",
+            "label": "Ausstellungsbehörde des Personalausweises",
+            "value": ""
+          }
+        ]
+      },
+      {
+        "name": "Kraftfahrzeug - Zulassung bei Halterwechsel beantragen",
+        "fields": [
+          {
+            "key": "Vorname",
+            "label": "Vorname",
+            "value": ""
+          },
+          {
+            "key": "Geburtsname",
+            "label": "Geburtsname",
+            "value": ""
+          },
+          {
+            "key": "Straße",
+            "label": "Straße",
+            "value": ""
+          },
+          {
+            "key": "Hausnummer",
+            "label": "Hausnummer",
+            "value": ""
+          },
+          {
+            "key": "Postleitzahl",
+            "label": "Postleitzahl",
+            "value": ""
+          },
+          {
+            "key": "Geburtsdatum",
+            "label": "Geburtsdatum",
+            "type": "date",
+            "value": ""
+          },
+          {
+            "key": "Geschlecht",
+            "label": "Geschlecht",
+            "value": ""
+          },
+          {
+            "key": "Geburtsort",
+            "label": "Geburtsort",
+            "value": ""
+          },
+          {
+            "key": "Ausstellungsbehörde des Personalausweises",
+            "label": "Ausstellungsbehörde des Personalausweises",
+            "value": ""
+          }
+        ]
+      },
+      {
+        "name": "Kraftfahrzeug ummelden",
+        "fields": [
+          {
+            "key": "Vorname",
+            "label": "Vorname",
+            "value": ""
+          },
+          {
+            "key": "Geburtsname",
+            "label": "Geburtsname",
+            "value": ""
+          },
+          {
+            "key": "Straße",
+            "label": "Straße",
+            "value": ""
+          },
+          {
+            "key": "Hausnummer",
+            "label": "Hausnummer",
+            "value": ""
+          },
+          {
+            "key": "Postleitzahl",
+            "label": "Postleitzahl",
+            "value": ""
+          },
+          {
+            "key": "Geburtsdatum",
+            "label": "Geburtsdatum",
+            "type": "date",
+            "value": ""
+          },
+          {
+            "key": "Geschlecht",
+            "label": "Geschlecht",
+            "value": ""
+          },
+          {
+            "key": "Geburtsort",
+            "label": "Geburtsort",
+            "value": ""
+          },
+          {
+            "key": "Ausstellungsbehörde des Personalausweises",
+            "label": "Ausstellungsbehörde des Personalausweises",
+            "value": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "label": "Manuelle Angaben",
+    "key": "manuelle_angabe",
+    "text": [
+      {
+        "text": "In diesem Schritt ist es erforderlich, dass Sie alle Felder ausfüllen."
+      },
+      {
+        "text": "Klicken Sie bitte auf 'Nächster Schritt', sobald alle Felder ausgefüllt sind."
+      }
+    ],
+    "services": [
+      {
+        "name": "Hauptwohnsitz anmelden",
+        "fields": [
+          {
+            "key": "manuelle_eingabe_Tag des Einzugs",
+            "label": "Tag des Einzugs",
+            "type": "date",
+            "value": ""
+          },
+          {
+            "key": "manuelle_eingabe_",
+            "label": "Postleitzahl",
+            "value": ""
+          },
+          {
+            "key": "manuelle_eingabe_Gemeinde",
+            "label": "Gemeinde",
+            "value": ""
+          },
+          {
+            "key": "manuelle_eingabe_Straße",
+            "label": "Straße",
+            "value": ""
+          },
+          {
+            "key": "manuelle_eingabe_Hausnummer",
+            "label": "Hausnummer",
+            "value": ""
+          },
+          {
+            "key": "manuelle_eingabe_Tag des Auszugs",
+            "label": "Tag des Auszugs",
+            "type": "date",
+            "value": ""
+          },
+          {
+            "key": "manuelle_eingabe_Wird die bisherige Wohnung beibehalten",
+            "label": "Wird die bisherige Wohnung beibehalten?",
+            "value": "",
+            "inputType": "radio",
+            "options": [
+              {
+                "value": "Ja"
+              },
+              {
+                "value": "Nein"
+              }
+            ]
+          },
+          {
+            "key": "manuelle_eingabe_Dauernd getrennt lebend",
+            "label": "Dauernd getrennt lebend",
+            "value": "",
+            "inputType": "radio",
+            "options": [
+              {
+                "value": "Ja"
+              },
+              {
+                "value": "Nein"
+              }
+            ]
+          },
+          {
+            "key": "manuelle_eingabe_Bescheinigung des Wohnungsgebers",
+            "label": "Bescheinigung des Wohnungsgebers",
+            "value": "",
+            "inputType": "file"
+          }
+        ]
+      },
+      {
+        "name": "Kraftfahrzeug - Zulassung bei Halterwechsel beantragen",
+        "fields": [
+          {
+            "key": "manuelle_eingabe_evb",
+            "label": "elektronische Versicherungsbestätigungs (eVB) - Nummer",
+            "value": ""
+          },
+          {
+            "key": "manuelle_eingabe_Kennzeichen",
+            "label": "Fragen zu Ihrem Kennzeichen:",
+            "inputType": "radio",
+            "value": "",
+            "options": [
+              {
+                "value": "Haben Sie eine Reservierungs-PIN für Ihren Wunschkennzeichen?",
+                "fields": [
+                  {
+                    "key": "manuelle_eingabe_PIN",
+                    "label": "Geben Sie Ihren Reservierungs-PIN ein.",
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "value": "Möchten Sie ein x-beliebiges Kennzeichen generieren?",
+                "fields": [
+                  {
+                    "key": "manuelle_eingabe_random kennzeichen",
+                    "label": "Zufällig generiertes Kennzeichen",
+                    "inputType": "generatedKfz",
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "value": "Möchten Sie jetzt ein Wunschkennzeichen suchen?",
+                "fields": [
+                  {
+                    "key": "manuelle_eingabe_ Wunschkennzeichen",
+                    "label": "Wunschkennzeichen",
+                    "value": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "manuelle_eingabe_Möchten Sie eine Ausserbetriebsetzung (Abmeldung) eines Fahrzeugs vornehmen [ja/nein]?",
+            "label": "Möchten Sie eine Ausserbetriebsetzung (Abmeldung) eines Fahrzeugs vornehmen?",
+            "value": "",
+            "inputType": "radio",
+            "options": [
+              {
+                "value": "Ja"
+              },
+              {
+                "value": "Nein"
+              }
+            ]
+          },
+          {
+            "key": "manuelle_eingabe_Fahrzeugidentifikationsnummer",
+            "label": "Fahrzeugidentifikationsnummer",
+            "value": ""
+          },
+          {
+            "key": "manuelle_eingabe_E-Mail Adresse",
+            "label": "E-Mail Adresse",
+            "type": "email",
+            "value": ""
+          },
+          {
+            "key": "manuelle_eingabe_Kontoinhaber",
+            "label": "Kontoinhaber",
+            "value": ""
+          },
+          {
+            "key": "manuelle_eingabe_IBAN",
+            "label": "IBAN",
+            "type": "iban",
+            "value": ""
+          },
+          {
+            "key": "manuelle_eingabe_W\u00fcnschen Sie ein Elektrokennzeichen (falls zuvor festgestellt das es sich hierbei um ein E-Auto handelt)?",
+            "label": "W\u00fcnschen Sie ein Elektrokennzeichen (falls zuvor festgestellt das es sich hierbei um ein E-Auto handelt)?",
+            "inputType": "radio",
+            "value": "",
+            "options": [
+              {
+                "value": "Ja"
+              },
+              {
+                "value": "Nein"
+              }
+            ]
+          },
+          {
+            "key": "manuelle_eingabe_Fahrzeugverwendung",
+            "label": "Fahrzeugverwendung",
+            "value": ""
+          },
+          {
+            "key": "manuelle_eingabe_steuerbefreiung",
+            "label": "Antrag auf Steuerbefreiung",
+            "inputType": "radio",
+            "options": [
+              {
+                "value": "ja"
+              },
+              {
+                "value": "nein"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Kraftfahrzeug ummelden",
+        "fields": [
+          {
+            "key": "manuelle_eingabe_evb",
+            "label": "elektronische Versicherungsbestätigungs (eVB) - Nummer",
+            "value": ""
+          },
+          {
+            "key": "manuelle_eingabe_Kennzeichen",
+            "label": "Fragen zu Ihrem Kennzeichen:",
+            "inputType": "radio",
+            "value": "",
+            "options": [
+              {
+                "value": "Haben Sie eine Reservierungs-PIN für Ihren Wunschkennzeichen?",
+                "fields": [
+                  {
+                    "key": "manuelle_eingabe_PIN",
+                    "label": "Geben Sie Ihren Reservierungs-PIN ein.",
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "value": "Möchten Sie ein x-beliebiges Kennzeichen generieren?",
+                "fields": [
+                  {
+                    "key": "manuelle_eingabe_random kennzeichen",
+                    "label": "Zufällig generiertes Kennzeichen",
+                    "inputType": "generatedKfz",
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "value": "Möchten Sie jetzt ein Wunschkennzeichen suchen?",
+                "fields": [
+                  {
+                    "key": "manuelle_eingabe_ Wunschkennzeichen",
+                    "label": "Wunschkennzeichen",
+                    "value": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "manuelle_eingabe_Möchten Sie eine Ausserbetriebsetzung (Abmeldung) eines Fahrzeugs vornehmen [ja/nein]?",
+            "label": "Möchten Sie eine Ausserbetriebsetzung (Abmeldung) eines Fahrzeugs vornehmen?",
+            "value": "",
+            "inputType": "radio",
+            "options": [
+              {
+                "value": "Ja"
+              },
+              {
+                "value": "Nein"
+              }
+            ]
+          },
+          {
+            "key": "manuelle_eingabe_Fahrzeugidentifikationsnummer",
+            "label": "Fahrzeugidentifikationsnummer",
+            "value": ""
+          },
+          {
+            "key": "manuelle_eingabe_E-Mail Adresse",
+            "label": "E-Mail Adresse",
+            "type": "email",
+            "value": ""
+          },
+          {
+            "key": "manuelle_eingabe_Kontoinhaber",
+            "label": "Kontoinhaber",
+            "value": ""
+          },
+          {
+            "key": "manuelle_eingabe_IBAN",
+            "label": "IBAN",
+            "type": "iban",
+            "value": ""
+          },
+          {
+            "key": "manuelle_eingabe_W\u00fcnschen Sie ein Elektrokennzeichen (falls zuvor festgestellt das es sich hierbei um ein E-Auto handelt)?",
+            "label": "W\u00fcnschen Sie ein Elektrokennzeichen (falls zuvor festgestellt das es sich hierbei um ein E-Auto handelt)?",
+            "inputType": "radio",
+            "value": "",
+            "options": [
+              {
+                "value": "Ja"
+              },
+              {
+                "value": "Nein"
+              }
+            ]
+          },
+          {
+            "key": "manuelle_eingabe_Fahrzeugverwendung",
+            "label": "Fahrzeugverwendung",
+            "value": ""
+          },
+          {
+            "key": "manuelle_eingabe_steuerbefreiung",
+            "label": "Antrag auf Steuerbefreiung",
+            "inputType": "radio",
+            "options": [
+              {
+                "value": "ja"
+              },
+              {
+                "value": "nein"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "label": "Zuständige Stellen Anfragen",
+    "text": [
+      {
+        "text": "Die Angaben zu den unten aufgeführten Feldern müssen von den zuständigen Stellen abgefragt werden."
+      },
+      {
+        "text": "1. Klicken Sie bitte dazu auf 'Angaben einholen'."
+      },
+      {
+        "text": "2. Klicken Sie anschließend auf 'Antrag abschicken', sobald alle Felder automatisch ausgefüllt wurden."
+      }
+    ],
+    "services": [
+      {
+        "name": "Hauptwohnsitz anmelden",
+        "fields": [
+          {
+            "key": "behoerden_finanzbehoerde",
+            "label": "Erwerbstätig",
+            "value": "ja"
+          },
+          {
+            "key": "behoerden_finanzbehoerde",
+            "label": "Lohnsteuerklasse",
+            "value": "1"
+          },
+          {
+            "key": "behoerden_meldebehoerde",
+            "label": "Ausstellungsdatum des Personalausweises",
+            "value": "10.10.2010"
+          },
+          {
+            "key": "behoerden_meldebehoerde",
+            "label": "Religionsgesellschaft",
+            "value": "Römisch-Katholische Kirche"
+          },
+          {
+            "key": "behoerden_meldebehoerde",
+            "label": "Haben die aufgeführten Personen noch weitere Wohnungen?",
+            "value": "Nein"
+          },
+          {
+            "key": "behoerden_standesamt",
+            "label": "Familienstand",
+            "value": "ledig"
+          }
+        ]
+      },
+      {
+        "name": "Kraftfahrzeug - Zulassung bei Halterwechsel beantragen",
+        "fields": [
+          {
+            "key": "behoerden_zulassungsbehörde",
+            "label": "Sicherheitscode ZB1",
+            "value": "T0000001"
+          }
+        ]
+      },
+      {
+        "name": "Kraftfahrzeug ummelden",
+        "fields": [
+          {
+            "key": "behoerden_zulassungsbehörde",
+            "label": "Sicherheitscode ZB1",
+            "value": "T0000001"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "label": "Ergebnis"
+  }
+]

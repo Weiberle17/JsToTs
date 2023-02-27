@@ -1,0 +1,106 @@
+{
+  "einnahmeart": "PRJ_SEIN",
+  "blocks": [
+    {
+      "fieldset": "prj_sein_1",
+      "fields": [
+        {
+          "key": "kurzfristigeinnahmearten",
+          "size": 12,
+          "label": "Benötigen Sie im KM-V kurzfristig neue Einnahmearten, noch vor dem Jahreswechsel?",
+          "text": "Nach dem 30.04.2022 ist es nicht mehr möglich im KM-V neue Einnahmearten einzurichten. Dies kann erst nach der Produktivsetzung im neuen Jahr wieder erfolgen.",
+          "inputType": "radio",
+          "value": "",
+          "options": [
+            {
+              "value": "Ja. Wir erteilen einen Auftrag für eine neue KM-V Einnahmeart an der Service per Ticket bis spätestens 22.04.2022."
+            },
+            {
+              "value": "Nein"
+            }
+          ]
+        },
+        {
+          "key": "bescheidtexte",
+          "label": "Bescheidtexte",
+          "text": "Wurden die Textbausteine und deren Inhalt (Bescheidtexte) in allen Einnahmearten vollständig bearbeitet und geprüft?",
+          "value": false,
+          "inputType": "checkbox"
+        },
+        {
+          "key": "sachbearbeiterangaben",
+          "label": "Sachbearbeiterangaben",
+          "text": "Wurden die Sachbearbeiterangaben und deren Zuordnung in allen Einnahmearten vollständig bearbeitet und geprüft?",
+          "value": false,
+          "inputType": "checkbox"
+        },
+        {
+          "key": "infofelder",
+          "label": "Infofelder",
+          "text": "Haben Sie die Bezeichnung Ihrer Infofelder in allen Einnahmearten vollständig bearbeitet und geprüft?",
+          "value": false,
+          "inputType": "checkbox"
+        },
+        {
+          "key": "schluesselwerte",
+          "size": 6,
+          "label": "Schlüsselwerte für Infofelder",
+          "text": "Haben Sie die Wertelisten Ihrer Infofelder in den Allgemeinen Angaben (Schlüsselverzeichnis) für alle Einnahmearten bearbeitet und geprüft?",
+          "inputType": "radio",
+          "value": "",
+          "options": [
+            {
+              "value": "Ja, geprüft"
+            },
+            {
+              "value": "Nein, keine Wertelisten vorhanden"
+            }
+          ]
+        },
+        {
+          "key": "bezeichnungkontenrahmen",
+          "size": 6,
+          "label": "Bezeichnung der Kontenrahmen",
+          "text": "Wurden die Bezeichnungen der Kontenrahmen in allen Einnahmearten überarbeitet?",
+          "value": false,
+          "inputType": "checkbox"
+        },
+        {
+          "key": "tarifeuebernehmen",
+          "label": "Tarife übernehmen",
+          "text": "Wurden die Tarife bzgl. (Nicht-) Übernahme in allen Einnahmearten bearbeitet und geprüft?",
+          "value": false,
+          "inputType": "checkbox"
+        },
+        {
+          "key": "bezeichnungtarifgruppen",
+          "label": "Bezeichnung der Tarifgruppen",
+          "text": "Wurden die Tarifbezeichnungen in allen Einnahmearten überarbeitet?",
+          "value": false,
+          "inputType": "checkbox"
+        },
+        {
+          "key": "bescheidtexttarife",
+          "label": "Bescheidtexte der Tarife",
+          "text": "Wurde für die zu migrierenden Tarife die Bescheidtexte (Tarifbestimmung) in allen Einnahmearten überarbeitet?",
+          "value": false,
+          "inputType": "checkbox"
+        }
+      ]
+    },
+    {
+      "fieldset": "prj_sein_2",
+      "fields": [
+        {
+          "nurJaso": true,
+          "size": 12,
+          "key": "bescheide",
+          "label": "Bescheide KM-StA",
+          "text": "Ja, hiermit bestätige ich, dass die Textbausteine und deren Inhalt (Bescheidtexte) im KM-StA in allen Bereichen vollständig geprüft wurde und in dieser Form verwendet werden kann",
+          "inputType": "checkbox",
+          "value": false
+        }
+      ]
+    }
+  ]
+}

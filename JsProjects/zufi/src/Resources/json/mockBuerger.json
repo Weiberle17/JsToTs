@@ -1,0 +1,14 @@
+{
+  "Vorname": "MusterVorname",
+  "Geburtsname": "MusterNachname",
+  "Postleitzahl": "38114",
+  "Gemeinde": "MusterGemeinde",
+  "Straße":"Rosental",
+  "Hausnummer": "1",
+  "Familienname/Doktorgrad": "",
+  "Geschlecht": "weiblich",
+  "Geburtsdatum": "10.01.1985",
+  "Geburtsort": "Braunschweig",
+  "Staatsangehörigkeiten": ["Deutsch"],
+  "Ausstellungsbehörde des Personalausweises": "Meldebehörde Braunschweig"
+}

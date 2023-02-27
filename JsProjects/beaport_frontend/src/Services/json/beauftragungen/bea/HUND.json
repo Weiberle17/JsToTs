@@ -1,0 +1,149 @@
+{
+  "einnahmeart": "HUND",
+  "blocks": [
+    {
+      "fields": [
+        {
+          "key": "Neue_Steuersaetze",
+          "label": "Neue Steuersätze",
+          "text": "",
+          "inputType": "radio",
+          "value": "",
+          "options": [
+            {
+              "value": "Ja"
+            },
+            {
+              "value": "Nein"
+            }
+          ]
+        },
+        {
+          "key": "Neue_Hundegruppe",
+          "label": "Neue Hundegruppe",
+          "text": "",
+          "inputType": "radio",
+          "value": "",
+          "options": [
+            {
+              "value": "Ja"
+            },
+            {
+              "value": "Nein"
+            }
+          ]
+        },
+        {
+          "key": "Neue_Hundeart",
+          "label": "Neue Hundeart",
+          "text": "",
+          "inputType": "radio",
+          "value": "",
+          "options": [
+            {
+              "value": "Ja"
+            },
+            {
+              "value": "Nein"
+            }
+          ]
+        },
+        {
+          "key": "Laufzeitpunkt",
+          "label": "Laufzeitpunkt",
+          "size": 6,
+          "text": "",
+          "inputType": "select",
+          "value": "",
+          "options": [
+            {
+              "value": "Dezember"
+            },
+            {
+              "value": "Januar"
+            },
+            {
+              "value": "GR-Beschluss noch offen"
+            }
+          ]
+        },
+        {
+          "key": "Markenvergabe",
+          "label": "Markenvergabe",
+          "size": 6,
+          "text": "",
+          "inputType": "select",
+          "value": "",
+          "options": [
+            {
+              "value": "Alte unbefristet"
+            },
+            {
+              "value": "Neue unbefristet"
+            },
+            {
+              "value": "Jährlich"
+            },
+            {
+              "value": "keine"
+            }
+          ]
+        },
+        {
+          "key": "Bescheideinstellung",
+          "label": "Bescheideinstellung",
+          "text": "",
+          "inputType": "text"
+        },
+        {
+          "key": "Bescheidsortierung",
+          "label": "Bescheidsortierung",
+          "text": "",
+          "inputType": "text"
+        },
+        {
+          "key": "Kuvertierung",
+          "label": "Kuvertierung",
+          "text": "",
+          "inputType": "text"
+        },
+        {
+          "key": "Nullbescheide",
+          "label": "Nullbescheide",
+          "text": "",
+          "inputType": "radio",
+          "value": "",
+          "options": [
+            {
+              "value": "Ja"
+            },
+            {
+              "value": "Nein"
+            }
+          ]
+        },
+        {
+          "key": "Abbucherkennzeichen_Sollliste",
+          "label": "Abbucherkennzeichen auf Sollliste drucken",
+          "text": "",
+          "inputType": "radio",
+          "value": "",
+          "options": [
+            {
+              "value": "Ja"
+            },
+            {
+              "value": "Nein"
+            }
+          ]
+        },
+        {
+          "key": "Sortierung_Sollliste",
+          "label": "Sortierung Sollliste",
+          "text": "",
+          "inputType": "text"
+        }
+      ]
+    }
+  ]
+}

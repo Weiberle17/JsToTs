@@ -1,0 +1,130 @@
+{
+  "prj_beauftragungen": [
+    {
+      "einnahmeart": "PRJ_GBA",
+      "bezeichnung": "Grundsteuer",
+      "blocks": [
+        {
+          "completed": false,
+          "frist": "0103"
+        },
+        {
+          "completed": false,
+          "frist": "0105"
+        }
+      ]
+    },
+    {
+      "einnahmeart": "PRJ_GEWS",
+      "bezeichnung": "Gewerbesteuer",
+      "blocks": [
+        {
+          "completed": true,
+          "frist": "0103"
+        },
+        {
+          "completed": true,
+          "frist": "0105"
+        }
+      ]
+    },
+    {
+      "einnahmeart": "PRJ_HUND",
+      "bezeichnung": "Hundesteuer",
+      "blocks": [
+        {
+          "completed": false,
+          "frist": "0103"
+        },
+        {
+          "completed": false,
+          "frist": "0105"
+        }
+      ]
+    },
+    {
+      "einnahmeart": "PRJ_SEIN",
+      "bezeichnung": "Sonstige Einnahmen",
+      "blocks": [
+        {
+          "completed": false,
+          "frist": "0503"
+        }
+      ]
+    },
+    {
+      "einnahmeart": "PRJ_WASSER",
+      "bezeichnung": "Wasser/Abwasser",
+      "blocks": [
+        {
+          "completed": false,
+          "frist": "0105"
+        }
+      ]
+    }
+  ],
+  "beauftragungen": [
+    {
+      "einnahmeart": "GBA",
+      "bezeichnung": "Grundbesitzangaben",
+      "blocks": [
+        {
+          "completed": false,
+          "frist": "0103"
+        },
+        {
+          "completed": false,
+          "frist": "0105"
+        }
+      ]
+    },
+    {
+      "einnahmeart": "GEWS",
+      "bezeichnung": "Gewerbesteuer",
+      "blocks": [
+        {
+          "completed": false,
+          "frist": "0103"
+        },
+        {
+          "completed": false,
+          "frist": "0105"
+        }
+      ]
+    },
+    {
+      "einnahmeart": "HUND",
+      "bezeichnung": "Hundesteuer",
+      "blocks": [
+        {
+          "completed": false,
+          "frist": "0103"
+        },
+        {
+          "completed": false,
+          "frist": "0105"
+        }
+      ]
+    },
+    {
+      "einnahmeart": "SEIN",
+      "bezeichnung": "Sonstige Einnahmen",
+      "blocks": [
+        {
+          "completed": false,
+          "frist": "0105"
+        }
+      ]
+    },
+    {
+      "einnahmeart": "WASSER",
+      "bezeichnung": "Wasser/Abwasser",
+      "blocks": [
+        {
+          "completed": false,
+          "frist": "0103"
+        }
+      ]
+    }
+  ]
+}

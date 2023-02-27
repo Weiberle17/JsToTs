@@ -1,0 +1,57 @@
+[
+  {
+    "key": "einnahmeart",
+    "label": "Einnahmeart",
+    "inputType": "select",
+    "value": "",
+    "disabled": false,
+    "options": [
+      {
+        "value": "GBA"
+      },
+      {
+        "value": "GEWS"
+      },
+      {
+        "value": "HUND"
+      },
+      {
+        "value": "SEIN"
+      },
+      {
+        "value": "WASSER"
+      }
+    ]
+  },
+  {
+    "key": "gegenstandsart",
+    "label": "Gegenstandsart",
+    "value": "",
+    "required": true
+  },
+  {
+    "key": "lastname",
+    "label": "Nachname",
+    "value": "",
+    "required": true
+  },
+  {
+    "key": "firstname",
+    "label": "Vorname",
+    "value": "",
+    "required": true
+  },
+  {
+    "key": "email",
+    "label": "E-Mail",
+    "type": "email",
+    "error": false,
+    "value": ""
+  },
+  {
+    "key": "telefon",
+    "label": "Telefon",
+    "value": "",
+    "type": "tel"
+  }
+]

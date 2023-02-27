@@ -1,0 +1,90 @@
+{
+  "fields": [
+        {
+          "key": "bescheidtexte",
+          "size": 6,
+          "label": "Bescheidtexte",
+          "text": "Wurden die Textbausteine und deren Inhalt (Bescheidtexte) vollständig bearbeitet und geprüft?",
+          "value": false,
+          "inputType": "checkbox"
+        },
+        {
+          "key": "sachbearbeiterangaben",
+          "size": 6,
+          "label": "Sachbearbeiterangaben",
+          "text": "Wurden die Sachbearbeiterangaben und deren Zuordnung vollständig bearbeitet und geprüft?",
+          "value": false,
+          "inputType": "checkbox"
+        },
+        {
+          "key": "infofelder",
+          "size": 6,
+          "label": "Infofelder",
+          "text": "Haben Sie geprüft, ob Sie individuelle Infofelder nutzen und diese bzw. deren Bezeichnung bearbeitet?",
+          "value": false,
+          "inputType": "checkbox"
+        },
+        {
+          "key": "schluesselwerte",
+          "size": 6,
+          "label": "Schlüsselwerte für Infofelder",
+          "text": "Haben Sie die Wertelisten Ihrer Infofelder in den Allgemeinen Angaben (Schlüsselverzeichnis) bearbeitet und geprüft?",
+          "inputType": "radio",
+          "value": "",
+          "options": [
+            {
+              "value": "Ja, geprüft"
+            },
+            {
+              "value": "Nein, keine Wertelisten vorhanden"
+            }
+          ]
+        },
+        {
+          "key": "verwendetetarife",
+          "label": "Nicht verwendete Tarife prüfen",
+          "text": "Wurden die Tarife auf Weiterverwendung geprüft?",
+          "value": false,
+          "inputType": "checkbox"
+        },
+        {
+          "key": "bezeichnungtarifgruppen",
+          "label": "Bezeichnung der Tarifgruppen",
+          "text": "Wurden die Tarifgruppen geprüft?",
+          "value": false,
+          "inputType": "checkbox"
+        },
+        {
+          "key": "tarifbestimmung",
+          "label": "Tarifbestimmung (Bescheidtext)",
+          "text": "Wurden die Bescheidtexte der Tarife geprüft?",
+          "value": false,
+          "inputType": "checkbox"
+        },
+        {
+          "key": "ersatzsteuermarken",
+          "size": 12,
+          "label": "Ersatzsteuermarken",
+          "text": "Wurden die Ersatzsteuermarken bisher im KM-V veranlagt?",
+          "value": false,
+          "inputType": "radio",
+          "options": [
+            {
+              "value": "Ja",
+              "fields": [
+                {
+                  "label": "Preisangabe",
+                  "inputType": "text",
+                  "key": "ersatzsteuermarken_preisangabe",
+                  "value": "",
+                  "endAdornment": "€"
+                }
+              ]
+            },
+            {
+              "value": "Nein"
+            }
+          ]
+        }
+      ]
+}

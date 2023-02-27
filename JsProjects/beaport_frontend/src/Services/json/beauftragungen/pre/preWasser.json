@@ -1,0 +1,18 @@
+{
+  "fields": [
+        {
+          "key": "bescheidtexte",
+          "label": "Bescheidtexte in KM-V",
+          "text": "Wurden die Textbausteine und deren Inhalt (Bescheidtexte) vollständig bearbeitet und geprüft?",
+          "size": 6,
+          "inputType": "checkbox"
+        },
+        {
+          "key": "sachbearbeiterangaben",
+          "label": "Sachbearbeiterangaben im KM-V",
+          "text": "Wurden die Sachbearbeiterangaben und deren Zuordnung vollständig bearbeitet und geprüft?",
+          "size": 6,
+          "inputType": "checkbox"
+        }
+      ]
+}

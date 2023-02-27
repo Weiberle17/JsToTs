@@ -1,0 +1,334 @@
+{
+  "fields": [
+    {
+      "key": "hebesatz",
+      "label": "Hebesatzänderung",
+      "inputType": "radio",
+      "value": "",
+      "options": [
+        {
+          "value": "Keine Änderung des Hebesatzes"
+        },
+        {
+          "value": "Beschluss zur Hebesatzänderung steht noch aus",
+          "fields": [
+            {
+              "key": "hebesatz_datumgrs",
+              "label": "Gemeinderatsbeschluss folgt voraussichtlich am",
+              "type": "date",
+              "text": [
+                {
+                  "linkTo": "mailto:projekte_veranlagung@komm.one",
+                  "linkText": "projekte_veranlagung@komm.one",
+                  "text": "Bitte teilen Sie uns die beschlossenen Hebesätze sobald bekannt per E-Mail an projekte_veranlagung@komm.one mit!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "value": "Ja - bei Grundsteuer A + B",
+          "fields": [
+            {
+              "key": "hebesatz_aalt",
+              "label": "Hebesatz Grundsteuer A alt in %",
+              "type": "number",
+              "conditions": {
+                "max": 999,
+                "step": 1
+              },
+              "size": 6,
+              "endAdornment": "%"
+            },
+            {
+              "key": "hebesatz_aneu",
+              "label": "Hebesatz Grundsteuer A neu in %",
+              "type": "number",
+              "conditions": {
+                "max": 999,
+                "step": 1
+              },
+              "size": 6,
+              "endAdornment": "%"
+            },
+            {
+              "key": "hebesatz_balt",
+              "label": "Hebesatz Grundsteuer B alt in %",
+              "type": "number",
+              "conditions": {
+                "max": 999,
+                "step": 1
+              },
+              "size": 6,
+              "endAdornment": "%"
+            },
+            {
+              "key": "hebesatz_bneu",
+              "label": "Hebesatz Grundsteuer B neu in %",
+              "type": "number",
+              "conditions": {
+                "max": 999,
+                "step": 1
+              },
+              "size": 6,
+              "endAdornment": "%"
+            },
+            {
+              "key": "hebesatz_datumgrs",
+              "label": "Gemeinderatsbeschluss zur Hebesatzänderung vom",
+              "type": "date"
+            },
+            {
+              "key": "hebesatz_vorspann",
+              "label": "Text als Vorspann",
+              "inputType": "radio",
+              "value": "",
+              "options": [
+                {
+                  "value": "Ja",
+                  "fields": [
+                    {
+                      "key": "hebesatz_vorspann_text",
+                      "label": "Vorspann",
+                      "value": "Der Gemeinderat hat am [DATUM] beschlossen, den Hebesatz der Grundsteuer A von bisher [HEBESATZ A ALT] % auf [HEBESATZ A NEU] % und den Hebesatz der Grundsteuer B von bisher [HEBESATZ B ALT] % auf [HEBESATZ B NEU] % zu erhöhen."
+                    }
+                  ]
+                },
+                {
+                  "value": "Nein"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "value": "Ja - bei Grundsteuer A",
+          "fields": [
+            {
+              "key": "hebesatz_aalt",
+              "label": "Hebesatz Grundsteuer A alt in %",
+              "type": "number",
+              "conditions": {
+                "max": 999,
+                "step": 1
+              },
+              "size": 6,
+              "endAdornment": "%"
+            },
+            {
+              "key": "hebesatz_aneu",
+              "label": "Hebesatz Grundsteuer A neu in %",
+              "type": "number",
+              "conditions": {
+                "max": 999,
+                "step": 1
+              },
+              "size": 6,
+              "endAdornment": "%"
+            },
+            {
+              "key": "hebesatz_datumgrs",
+              "label": "Gemeinderatsbeschluss zur Hebesatzänderung vom",
+              "type": "date"
+            },
+            {
+              "key": "hebesatz_vorspann",
+              "label": "Text als Vorspann",
+              "inputType": "radio",
+              "value": "",
+              "options": [
+                {
+                  "value": "Ja",
+                  "fields": [
+                    {
+                      "key": "hebesatz_vorspann_text",
+                      "label": "Vorspann",
+                      "value": "Der Gemeinderat hat am [DATUM] beschlossen, den Hebesatz der Grundsteuer A von bisher [HEBESATZ A ALT] % auf [HEBESATZ A NEU] % zu erhöhen."
+                    }
+                  ]
+                },
+                {
+                  "value": "Nein"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "value": "Ja - bei Grundsteuer B",
+          "fields": [
+            {
+              "key": "hebesatz_balt",
+              "label": "Hebesatz Grundsteuer B alt in %",
+              "type": "number",
+              "conditions": {
+                "max": 999,
+                "step": 1
+              },
+              "size": 6,
+              "endAdornment": "%"
+            },
+            {
+              "key": "hebesatz_bneu",
+              "label": "Hebesatz Grundsteuer B neu in %",
+              "type": "number",
+              "conditions": {
+                "max": 999,
+                "step": 1
+              },
+              "size": 6,
+              "endAdornment": "%"
+            },
+            {
+              "key": "hebesatz_datumgrs",
+              "label": "Gemeinderatsbeschluss zur Hebesatzänderung vom",
+              "type": "date"
+            },
+            {
+              "key": "hebesatz_vorspann",
+              "label": "Text als Vorspann",
+              "inputType": "radio",
+              "value": "",
+              "options": [
+                {
+                  "value": "Ja",
+                  "fields": [
+                    {
+                      "key": "hebesatz_vorspann_text",
+                      "label": "Vorspann",
+                      "value": "Der Gemeinderat hat am [DATUM] beschlossen, den Hebesatz der Grundsteuer B von bisher [HEBESATZ B ALT] % auf [HEBESATZ B NEU] % zu erhöhen."
+                    }
+                  ]
+                },
+                {
+                  "value": "Nein"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "kuv",
+      "label": "Welche Kuvertierung soll verwendet werden?",
+      "inputType": "radio",
+      "value": "",
+      "options": [
+        {
+          "value": "nicht kuvertiert"
+        },
+        {
+          "value": "geschlossen kuvertiert"
+        },
+        {
+          "value": "geschlossen kuvertiert (direkte Posteinlieferung)",
+          "fields": [
+            {
+              "key": "kuv_hinweis",
+              "value": false,
+              "text": [
+                {
+                  "text": "Hinweis:",
+                  "margin": 2
+                },
+                {
+                  "text": "Auf Wunsch übernehmen wir für Sie auch die unmittelbare Posteinlieferung. Diese Option erfordert eine vorherige förmliche Bestellung/Beauftragung."
+                },
+                {
+                  "text": "Gerne erhalten Sie hierüber ein persönliches Angebot für unser Produkt Outputmanagement.Briefdienst Veranlagung."
+                },
+                {
+                  "linkTo": "mailto:kundenmanagement@komm.one",
+                  "linkText": "Kundenmanagement@Komm.ONE",
+                  "text": "Bei Interesse erreichen Sie unser Kundenmanagement unter Kundenmanagement@Komm.ONE."
+                },
+                {
+                  "text": "Die Bestellung muss mindestens 4 Wochen vor der Jahressollstellung erfolgen."
+                }
+              ],
+              "label": "Hinweis zur Kenntnis genommen",
+              "inputType": "checkbox"
+            }
+          ]
+        },
+        {
+          "value": "geschlossen kuvertiert mit Beilage"
+        },
+        {
+          "value": "geschlossen kuvertiert mit Beilage (direkte Posteinlieferung)",
+          "fields": [
+            {
+              "key": "kuv_hinweis",
+              "value": false,
+              "text": [
+                {
+                  "text": "Hinweis:",
+                  "margin": 2
+                },
+                {
+                  "text": "Auf Wunsch übernehmen wir für Sie auch die unmittelbare Posteinlieferung. Diese Option erfordert eine vorherige förmliche Bestellung/Beauftragung."
+                },
+                {
+                  "text": "Gerne erhalten Sie hierüber ein persönliches Angebot für unser Produkt Outputmanagement.Briefdienst Veranlagung."
+                },
+                {
+                  "linkTo": "mailto:kundenmanagement@komm.one",
+                  "linkText": "Kundenmanagement@Komm.ONE",
+                  "text": "Bei Interesse erreichen Sie unser Kundenmanagement unter Kundenmanagement@Komm.ONE."
+                },
+                {
+                  "text": "Die Bestellung muss mindestens 4 Wochen vor der Jahressollstellung erfolgen."
+                }
+              ],
+              "label": "Hinweis zur Kenntnis genommen",
+              "inputType": "checkbox"
+            }
+          ]
+        },
+        {
+          "value": "offen kuvertiert"
+        },
+        {
+          "value": "offen kuvertiert mit Beilage"
+        }
+      ]
+    },
+    {
+      "key": "nullbescheide",
+      "label": "Auswahl Nullbescheide",
+      "hint": [
+        {
+          "text": "Nullbescheide erstellen: Die Höhe des festgesetzten Betrags hat keinen Einfluss, ob der Jahresbescheid gedruckt werden soll."
+        },
+        {
+          "text": "Nullbescheide nicht erstellen: Wenn die Festsetzung, die dem Jahresbescheid zu Grunde liegt 0,00 € beträgt, soll kein Bescheid erstellt werden."
+        }
+      ],
+      "inputType": "radio",
+      "value": "",
+      "options": [
+        {
+          "value": "Nullbescheide erstellen"
+        },
+        {
+          "value": "Nullbescheide nicht erstellen"
+        }
+      ]
+    },
+    {
+      "key": "sortierung",
+      "label": "Die Bescheide sollen sortiert werden...",
+      "inputType": "radio",
+      "value": "",
+      "options": [
+        {
+          "value": "nach Vertrag/Buchungszeichen "
+        },
+        {
+          "value": "nach Adresse (Land / PLZ / Straße / Hausnummer)"
+        }
+      ]
+    }
+  ]
+}

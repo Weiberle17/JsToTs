@@ -1,0 +1,80 @@
+{
+  "einnahmeart": "SEIN",
+  "blocks": [
+    {
+      "fields": [
+        {
+          "key": "Bescheideinstellung",
+          "label": "Bescheideinstellung (Pro EA)",
+          "text": "",
+          "inputType": "text"
+        },
+        {
+          "key": "Bescheidsortierung",
+          "label": "Bescheidsortierung (Pro EA)",
+          "text": "",
+          "inputType": "text"
+        },
+        {
+          "key": "Kuvertierung",
+          "label": "Kuvertierung  (Pro EA)",
+          "text": "",
+          "inputType": "text"
+        },
+        {
+          "key": "Nullbescheide",
+          "label": "Nullbescheide",
+          "text": "",
+          "inputType": "radio",
+          "value": "",
+          "options": [
+            {
+              "value": "Ja"
+            },
+            {
+              "value": "Nein"
+            }
+          ]
+        },
+
+        {
+          "key": "Abbucherkennzeichen_Sollliste",
+          "label": "Abbucherkennzeichen auf Sollliste drucken",
+          "text": "",
+          "inputType": "radio",
+          "value": "",
+          "options": [
+            {
+              "value": "Ja"
+            },
+            {
+              "value": "Nein"
+            }
+          ]
+        },
+        {
+          "key": "Sortierung_Sollliste",
+          "label": "Sortierung Sollliste",
+          "text": "",
+          "inputType": "text"
+        },
+        {
+          "key": "Jaso_Reife",
+          "label": "Jaso Reife",
+          "size": 12,
+          "text": "",
+          "inputType": "radio",
+          "value": "",
+          "options": [
+            {
+              "value": "Ja"
+            },
+            {
+              "value": "Nein"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

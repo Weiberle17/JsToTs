@@ -1,0 +1,37 @@
+{
+  "fields": [
+        {
+          "key": "bescheidtexte",
+          "size": 6,
+          "label": "Bescheidtexte in KM-V",
+          "text": "Wurden die Bescheide im KM-V vollständig bearbeitet und geprüft?",
+          "value": false,
+          "inputType": "checkbox"
+        },
+        {
+          "key": "sachbearbeiterangaben",
+          "size": 6,
+          "label": "Sachbearbeiterangaben in KM-V",
+          "text": "Wurden die Textbausteine und deren Inhalt (Bescheidtexte) vollständig bearbeitet und geprüft?",
+          "value": false,
+          "inputType": "checkbox"
+        },
+        {
+          "key": "teilmaschinelledta",
+          "size": 12,
+          "label": "Möglichkeit des teilmaschinellen Umstellens bei DTA-Kunden",
+          "text": "Soll die teilmaschinelle Umschlüsselung des Branchenschlüssels (Übernahme aus DTA Fall) durch uns stattfinden?",
+          "hint": "Hinweis: Die teilmaschinelle Umschlüsselung geht nur in Verbindung mit DTA-Nutzung im KM-V",
+          "inputType": "radio",
+          "value": "",
+          "options": [
+            {
+              "value": "Ja"
+            },
+            {
+              "value": "Nein"
+            }
+          ]
+        }
+      ]
+}

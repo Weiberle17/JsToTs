@@ -1,0 +1,189 @@
+{
+  "einnahmeart": "PRJ_WASSER",
+  "blocks": [
+    {
+      "fieldset": "prj_wasser_1",
+      "fields": [
+        {
+          "key": "bescheidtexte",
+          "label": "Bescheidtexte in KM-V",
+          "text": "Wurden die Textbausteine und deren Inhalt (Bescheidtexte) vollständig bearbeitet und geprüft?",
+          "size": 6,
+          "inputType": "checkbox"
+        },
+        {
+          "key": "sachbearbeiterangaben",
+          "label": "Sachbearbeiterangaben im KM-V",
+          "text": "Wurden die Sachbearbeiterangaben und deren Zuordnung vollständig bearbeitet und geprüft?",
+          "size": 6,
+          "inputType": "checkbox"
+        }
+      ]
+    },
+    {
+      "fieldset": "prj_wasser_2",
+      "fields": [
+        {
+          "size": 12,
+          "key": "bescheide",
+          "label": "Bescheide KM-StA",
+          "text": "Wurden die Textbausteine und deren Inhalt (Bescheidtexte) im KM-StA vollständig geprüft?",
+          "inputType": "radio",
+          "options": [
+            {
+              "value": "Ja, hiermit bestätige ich, dass der Bescheid in allen Bereichen stimmt und in dieser Form verwendet werden kann."
+            },
+            {
+              "value": "Nein, ich habe einen Änderungswunsch",
+              "fields": [
+                {
+                  "label": "Absender im Adressfeld",
+                  "inputType": "text",
+                  "key": "bescheide_absender"
+                },
+                {
+                  "label": "Fußzeile",
+                  "inputType": "text",
+                  "key": "bescheide_footer"
+                },
+                {
+                  "label": "Logo ändern",
+                  "inputType": "file",
+                  "key": "bescheide_logo"
+                },
+                {
+                  "label": "Korrespondenzen andrucken",
+                  "inputType": "radio",
+                  "key": "bescheide_korr",
+                  "options": [
+                    {
+                      "value": "Ja, mit Adresse"
+                    },
+                    {
+                      "value": "Nein, ohne Adresse"
+                    }
+                  ]
+                },
+                {
+                  "label": "Sachbearbeiterdaten",
+                  "inputType": "text",
+                  "key": "bescheide_sbd"
+                },
+                {
+                  "label": "Erläuterungstext und Rechtsbehelfsbelehrung",
+                  "inputType": "text",
+                  "key": "bescheide_erl"
+                },{
+                  "label": "Vorspann",
+                  "inputType": "text",
+                  "key": "bescheide_pre"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fieldset": "prj_wasser_3",
+      "fields": [
+        {
+          "key": "bescheidtexte",
+          "label": "Bescheidtexte",
+          "text": "Wurden die Textbausteine und deren Inhalt (Bescheidtexte) vollständig bearbeitet und geprüft?",
+          "inputType": "checkbox"
+        },
+        {
+          "key": "gesperrte_buchungszeichen",
+          "label": "Gesperrte Buchungszeichen",
+          "text": "Haben Sie die Liste der gesperrten Konten im KM-V bearbeitet und geprüft?",
+          "inputType": "checkbox"
+        },
+        {
+          "key": "tarife_uebernehmen",
+          "label": "Tarife übernehmen",
+          "text": "Wurden die Tarife bzgl. (nicht) Übernahme bearbeitet und geprüft?",
+          "inputType": "checkbox"
+        },
+        {
+          "key": "auswertungen_bereinigung",
+          "label": "Auswertungen für Bereinigung",
+          "text": "Wurden die alle zur Verfügung gestellten Fälle bereinigt?",
+          "inputType": "checkbox"
+        },
+        {
+          "key": "prf_aenderung_Satzung",
+          "label": "Prüfung und Änderung Satzung",
+          "text": "Wurde die Wasser- und Abwassersatzung entsprechend den Anweisungen geprüft und wenn nötig geändert?",
+          "options": [
+            {
+              "value": "Ja, die Satzung wurde geprüft, keine Änderung notwendig"
+            },
+            {
+              "value": "Ja, die Satzung wurde geprüft, Änderung notwendig und erledigt"
+            },
+            {
+              "value": "Nein"
+            }
+          ],
+          "inputType": "radio"
+        },
+        {
+          "key": "prf_divisor",
+          "label": "Prüfung Divisor",
+          "text": "Wurde der Divisor der Vorauszahlungen entsprechend den Anweisungen geprüft und wenn nötig geändert?",
+          "inputType": "checkbox"
+        },
+        {
+          "key": "faelligkeitsfristen",
+          "label": "Fälligkeitsfristen",
+          "text": "Wurden die im KM-V hinterlegten Fälligkeitsfristen mit der Satzung abgeglichen und ggf. eine Satzungsänderung veranlasst?",
+          "options": [
+            {
+              "value": "Ja, die Fälligkeitsfristen wurden geprüft und stimmen"
+            },
+            {
+              "value": "Nein, die Fälligkeitsfristen wurden geprüft und stimmen nicht mit der Satzung überein, es wurde aber eine Satzungsänderung veranlasst",
+              "fields": [
+                {
+                  "label": "neue Fristen",
+                  "inputType": "text",
+                  "key": "faelligkeitsfristen_nf"
+                }
+              ]
+            },
+            {
+              "value": "Nein, die Fälligkeitsfristen stimmen nicht und müssen im KM-StA angepasst werden",
+              "fields": [
+                {
+                  "label": "neue Fristen",
+                  "inputType": "text",
+                  "key": "faelligkeitsfristen_nf"
+                }
+              ]
+            }
+          ],
+          "inputType": "radio"
+        },
+        {
+          "key": "nicht_benutzte_tarife",
+          "label": "Nicht benutzte Tarife",
+          "text": "Wurden die nicht benutzten Tarife geprüft und zur Löschung freigegeben?",
+          "inputType": "checkbox"
+        },
+        {
+          "key": "bezeichnung_tarifgruppe",
+          "label": "Bezeichnung der Tarifgruppe",
+          "text": "Wurden die Tarifbezeichnungen überarbeitet?",
+          "inputType": "checkbox"
+        },
+        {
+          "key": "nicht_abgerechnete_faelle",
+          "label": "Prüfung und Korrektur nicht abgerechnete Fälle",
+          "text": "Wurden die nicht abgerechneten Fälle aus Vorjahren geprüft und bereinigt?",
+          "inputType": "checkbox"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "einnahmeart": "GBA",
+  "blocks": [
+    {
+      "fields": [
+        {
+          "key": "Vorspanntext",
+          "size": 6,
+          "label": "Automatisch erzeugter Vorspanntext",
+          "text": "",
+          "inputType": "text"
+        },
+        {
+          "key": "Gemeinderatsbeschluss",
+          "size": 6,
+          "label": "Datum Gemeinderatsbeschluss",
+          "text": "",
+          "type": "date",
+          "inputType": "text"
+        },
+        {
+          "key": "Hebesatz_Grundsteuer_A_alt",
+          "label": "Hebesatz Grundsteuer A (alt)",
+          "text": "",
+          "type": "int",
+          "inputType": "text"
+        },
+        {
+          "key": "Hebesatz_Grundsteuer_A",
+          "label": "Hebesatz Grundsteuer A (neu)",
+          "text": "",
+          "type": "int",
+          "inputType": "text"
+        },
+        {
+          "key": "Hebesatz_Grundsteuer_B_alt",
+          "label": "Hebesatz Grundsteuer B (alt)",
+          "text": "",
+          "type": "int",
+          "inputType": "text"
+        },
+        {
+          "key": "Hebesatz_Grundsteuer_B",
+          "label": "Hebesatz Grundsteuer B (neu)",
+          "text": "",
+          "type": "int",
+          "inputType": "text"
+        },
+        {
+          "key": "Bescheideinstellung",
+          "size": 4,
+          "label": "Bescheideinstellung",
+          "text": "",
+          "inputType": "text"
+        },
+        {
+          "key": "Bescheidsortierung",
+          "size": 4,
+          "label": "Bescheidsortierung",
+          "text": "",
+          "inputType": "text"
+        },
+        {
+          "key": "Kuvertierung",
+          "size": 4,
+          "label": "Kuvertierung",
+          "text": "",
+          "inputType": "text"
+        },
+        {
+          "key": "Nullbescheide",
+          "label": "Nullbescheide",
+          "text": "",
+          "inputType": "radio",
+          "value": "",
+          "options": [
+            {
+              "value": "Ja"
+            },
+            {
+              "value": "Nein"
+            }
+          ]
+        },
+        {
+          "key": "Sortierung",
+          "label": "Sortierung Nullbescheide",
+          "text": "",
+          "inputType": "text"
+        },
+        {
+          "key": "Abbucherkennzeichen_Sollliste",
+          "label": "Abbucherkennzeichen auf Sollliste drucken",
+          "text": "",
+          "inputType": "radio",
+          "value": "",
+          "options": [
+            {
+              "value": "Ja"
+            },
+            {
+              "value": "Nein"
+            }
+          ]
+        },
+        {
+          "key": "Sortierung Sollliste",
+          "label": "Sortierung_Sollliste",
+          "text": "",
+          "inputType": "text"
+        }
+      ]
+    }
+  ]
+}

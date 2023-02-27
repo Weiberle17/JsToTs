@@ -1,0 +1,71 @@
+{
+  "einnahmeart": "WASSER",
+  "blocks": [
+    {
+      "fields": [
+        {
+          "key": "Anzahl_Bescheide",
+          "label": "Anzahl der Bescheide aus Vorjahr",
+          "text": "",
+          "inputType": "text",
+          "type": "int",
+          "rolle": "rz"
+        },
+        {
+          "key": "Faelligkeitsdatum",
+          "label": "Fälligkeitsdatum",
+          "helperText": "TT.MM.JJJJ",
+          "inputType": "text",
+          "type": "date",
+          "rolle": "rz"
+        },
+        {
+          "key": "Bescheiddatum",
+          "label": "Bescheiddatum",
+          "helperText": "TT.MM.JJJJ",
+          "inputType": "text",
+          "type": "date"
+        },
+        {
+          "key": "Hochrechnung",
+          "label": "Hochrechnung",
+          "inputType": "radio",
+          "options": [
+            {
+              "value": "Ja"
+            },
+            {
+              "value": "Nein"
+            }
+          ]
+        },
+        {
+          "key": "Abrechnung_1Abschlag",
+          "label": "Abrechnung mit erstem Abschlag",
+          "inputType": "radio",
+          "options": [
+            {
+              "value": "Ja"
+            },
+            {
+              "value": "Nein"
+            }
+          ]
+        },
+        {
+          "key": "Abrechnungspruefung_fehlerfrei",
+          "label": "Abrechnungsprüfung fehlerfrei",
+          "inputType": "radio",
+          "options": [
+            {
+              "value": "Ja"
+            },
+            {
+              "value": "Nein"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

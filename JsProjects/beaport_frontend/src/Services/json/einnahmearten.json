@@ -1,0 +1,22 @@
+[
+  {
+    "key": "GBA",
+    "bezeichnung": "Grundsteuer"
+  },
+  {
+    "key": "GEWS",
+    "bezeichnung": "Gewerbesteuer"
+  },
+  {
+    "key": "HUND",
+    "bezeichnung": "Hundesteuer"
+  },
+  {
+    "key": "SEIN",
+    "bezeichnung": "Sonstige Einnahmen"
+  },
+  {
+    "key": "WASSER",
+    "bezeichnung": "Wasser/Abwasser"
+  }
+]

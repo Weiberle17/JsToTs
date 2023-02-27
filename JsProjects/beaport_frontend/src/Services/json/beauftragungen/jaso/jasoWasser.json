@@ -1,0 +1,309 @@
+{
+  "fields": [
+    {
+      "key": "tarifaenderung",
+      "label": "Ist vor der Erstellung der Vorauszahlungsbescheide noch eine Tarifänderung im KM-StA einzugeben?",
+      "text": "Bitte beachten Sie, die in der Information genannten Termine, bis wann eine Tarifänderung für die Vorauszahlungsbescheide berücksichtigt werden kann.",
+      "inputType": "radio",
+      "value": "",
+      "options": [
+        {
+          "value": "Ja",
+          "fields": [
+            {
+              "key": "tarifaenderung_datum",
+              "label": "Tarifänderung gültig ab",
+              "type": "date"
+            },
+            {
+              "key": "tarifaenderung_vorspann",
+              "label": "Soll ein Text als Vorspann gedruckt werden?",
+              "inputType": "radio",
+              "value": "",
+              "options": [
+                {
+                  "value": "Ja",
+                  "fields": [
+                    {
+                      "key": "tarifaenderung_vorspann_text",
+                      "label": "Vorspann"
+                    }
+                  ]
+                },
+                {
+                  "value": "Nein"
+                }
+              ]
+            },
+            {
+              "key": "tarifaenderung_select",
+              "label": "Wie möchten Sie die Tarifgrößenänderung angeben?",
+              "inputType": "radio",
+              "value": "",
+              "options": [
+                {
+                  "value": "Tabelleneingabe",
+                  "fields": [
+                    {
+                      "key": "tarifaenderung_select_table",
+                      "inputType": "table",
+                      "addable": true,
+                      "fields": [
+                        {
+                          "key": "bezeichnung",
+                          "label": "Tarifbezeichnung"
+                        },
+                        {
+                          "key": "betragalt",
+                          "type": "number",
+                          "conditions": {
+                            "step": 0.01
+                          },
+                          "label": "Tarifbetrag bisher",
+                          "endAdornment": "€"
+                        },
+                        {
+                          "key": "betragneu",
+                          "type": "number",
+                          "conditions": {
+                            "step": 0.01
+                          },
+                          "label": "Tarifbetrag neu",
+                          "endAdornment": "€"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "value": "Dateiupload",
+                  "fields": [
+                    {
+                      "label": "Excel- oder PDF-Datei mit Tarifänderungen hochladen",
+                      "key": "tarifaenderung_select_file",
+                      "inputType": "file"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "value": "Nein"
+        }
+      ]
+    },
+    {
+      "key": "faelligkeit",
+      "label": "Anzahl der Fälligkeitstermine",
+      "inputType": "select",
+      "options": [
+        {
+          "value": "1",
+          "fields": [
+            {
+              "key": "faelligkeit_datum1",
+              "label": "Fälligkeitstermin 1",
+              "type": "date"
+            }
+          ]
+        },
+        {
+          "value": "2",
+          "fields": [
+            {
+              "key": "faelligkeit_datum1",
+              "label": "Fälligkeitstermin 1",
+              "type": "date"
+            },
+            {
+              "key": "faelligkeit_datum2",
+              "label": "Fälligkeitstermin 2",
+              "type": "date"
+            }
+          ]
+        },
+        {
+          "value": "3",
+          "fields": [
+            {
+              "key": "faelligkeit_datum1",
+              "label": "Fälligkeitstermin 1",
+              "type": "date"
+            },
+            {
+              "key": "faelligkeit_datum2",
+              "label": "Fälligkeitstermin 2",
+              "type": "date"
+            },
+            {
+              "key": "faelligkeit_datum3",
+              "label": "Fälligkeitstermin 3",
+              "type": "date"
+            }
+          ]
+        },
+        {
+          "value": "4",
+          "fields": [
+            {
+              "key": "faelligkeit_datum1",
+              "label": "Fälligkeitstermin 1",
+              "type": "date"
+            },
+            {
+              "key": "faelligkeit_datum2",
+              "label": "Fälligkeitstermin 2",
+              "type": "date"
+            },
+            {
+              "key": "faelligkeit_datum3",
+              "label": "Fälligkeitstermin 3",
+              "type": "date"
+            },
+            {
+              "key": "faelligkeit_datum4",
+              "label": "Fälligkeitstermin 4",
+              "type": "date"
+            }
+          ]
+        },
+        {
+          "value": "6",
+          "fields": [
+            {
+              "key": "faelligkeit_datum1",
+              "label": "Fälligkeitstermin 1",
+              "type": "date"
+            },
+            {
+              "key": "faelligkeit_datum2",
+              "label": "Fälligkeitstermin 2",
+              "type": "date"
+            },
+            {
+              "key": "faelligkeit_datum3",
+              "label": "Fälligkeitstermin 3",
+              "type": "date"
+            },
+            {
+              "key": "faelligkeit_datum4",
+              "label": "Fälligkeitstermin 4",
+              "type": "date"
+            },
+            {
+              "key": "faelligkeit_datum5",
+              "label": "Fälligkeitstermin 5",
+              "type": "date"
+            },
+            {
+              "key": "faelligkeit_datum6",
+              "label": "Fälligkeitstermin 6",
+              "type": "date"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "sortierung",
+      "label": "Die Bescheide sollen sortiert werden...",
+      "inputType": "radio",
+      "value": "",
+      "options": [
+        {
+          "value": "nach Vertrag/Buchungszeichen "
+        },
+        {
+          "value": "nach Adresse (Land / PLZ / Straße / Hausnummer)"
+        }
+      ]
+    },
+    {
+      "key": "kuv",
+      "label": "Welche Kuvertierung soll verwendet werden?",
+      "inputType": "radio",
+      "value": "",
+      "options": [
+        {
+          "value": "nicht kuvertiert"
+        },
+        {
+          "value": "geschlossen kuvertiert"
+        },
+        {
+          "value": "geschlossen kuvertiert (direkte Posteinlieferung)",
+          "fields": [
+            {
+              "key": "kuv_hinweis",
+              "value": false,
+              "text": [
+                {
+                  "text": "Hinweis:",
+                  "margin": 2
+                },
+                {
+                  "text": "Auf Wunsch übernehmen wir für Sie auch die unmittelbare Posteinlieferung. Diese Option erfordert eine vorherige förmliche Bestellung/Beauftragung."
+                },
+                {
+                  "text": "Gerne erhalten Sie hierüber ein persönliches Angebot für unser Produkt Outputmanagement.Briefdienst Veranlagung."
+                },
+                {
+                  "linkTo": "mailto:kundenmanagement@komm.one",
+                  "linkText": "Kundenmanagement@Komm.ONE",
+                  "text": "Bei Interesse erreichen Sie unser Kundenmanagement unter Kundenmanagement@Komm.ONE."
+                },
+                {
+                  "text": "Die Bestellung muss mindestens 4 Wochen vor der Jahressollstellung erfolgen."
+                }
+              ],
+              "label": "Hinweis zur Kenntnis genommen",
+              "inputType": "checkbox"
+            }
+          ]
+        },
+        {
+          "value": "geschlossen kuvertiert mit Beilage"
+        },
+        {
+          "value": "geschlossen kuvertiert mit Beilage (direkte Posteinlieferung)",
+          "fields": [
+            {
+              "key": "kuv_hinweis",
+              "value": false,
+              "text": [
+                {
+                  "text": "Hinweis:",
+                  "margin": 2
+                },
+                {
+                  "text": "Auf Wunsch übernehmen wir für Sie auch die unmittelbare Posteinlieferung. Diese Option erfordert eine vorherige förmliche Bestellung/Beauftragung."
+                },
+                {
+                  "text": "Gerne erhalten Sie hierüber ein persönliches Angebot für unser Produkt Outputmanagement.Briefdienst Veranlagung."
+                },
+                {
+                  "linkTo": "mailto:kundenmanagement@komm.one",
+                  "linkText": "Kundenmanagement@Komm.ONE",
+                  "text": "Bei Interesse erreichen Sie unser Kundenmanagement unter Kundenmanagement@Komm.ONE."
+                },
+                {
+                  "text": "Die Bestellung muss mindestens 4 Wochen vor der Jahressollstellung erfolgen."
+                }
+              ],
+              "label": "Hinweis zur Kenntnis genommen",
+              "inputType": "checkbox"
+            }
+          ]
+        },
+        {
+          "value": "offen kuvertiert"
+        },
+        {
+          "value": "offen kuvertiert mit Beilage"
+        }
+      ]
+    }
+  ]
+}

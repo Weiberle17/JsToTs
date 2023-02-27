@@ -1,0 +1,18 @@
+[
+  {
+    "key": "email",
+    "label": "E-Mail",
+    "value": "",
+    "required": true,
+    "type": "email",
+    "error": false,
+    "text": ""
+  },
+  {
+    "key": "password",
+    "label": "Passwort",
+    "value": "",
+    "required": true,
+    "type": "password"
+  }
+]

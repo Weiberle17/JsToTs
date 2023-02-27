@@ -1,0 +1,87 @@
+{
+  "einnahmeart": "PRJ_GBA",
+  "blocks": [
+    {
+      "fieldset": "prj_gba_1",
+      "fields": [
+        {
+          "key": "bescheidtexte",
+          "label": "Bescheidtexte in KM-V",
+          "text": "Wurden die Textbausteine und deren Inhalt (Bescheidtexte) vollständig bearbeitet und geprüft?",
+          "size": 6,
+          "inputType": "checkbox"
+        },
+        {
+          "key": "sachbearbeiterangaben",
+          "label": "Sachbearbeiterangaben in KM-V",
+          "text": "Wurden die Sachbearbeiterangaben und deren Zuordnung vollständig bearbeitet und geprüft?",
+          "size": 6,
+          "inputType": "checkbox"
+        }
+      ]
+    }, {
+      "fieldset": "prj_gba_2",
+      "fields": [
+        {
+          "size": 12,
+          "key": "bescheide",
+          "label": "Bescheide KM-StA",
+          "text": "Wurden die Textbausteine und deren Inhalt (Bescheidtexte) im KM-StA vollständig geprüft?",
+          "inputType": "radio",
+          "options": [
+            {
+              "value": "Ja, hiermit bestätige ich, dass der Bescheid in allen Bereichen stimmt und in dieser Form verwendet werden kann."
+            },
+            {
+              "value": "Nein, ich habe einen Änderungswunsch",
+              "fields": [
+                {
+                  "label": "Absender im Adressfeld",
+                  "inputType": "text",
+                  "key": "bescheide_absender"
+                },
+                {
+                  "label": "Fußzeile",
+                  "inputType": "text",
+                  "key": "bescheide_footer"
+                },
+                {
+                  "label": "Logo ändern",
+                  "inputType": "file",
+                  "key": "bescheide_logo"
+                },
+                {
+                  "label": "Korrespondenzen andrucken",
+                  "inputType": "radio",
+                  "key": "bescheide_korr",
+                  "options": [
+                    {
+                      "value": "Ja, mit Adresse"
+                    },
+                    {
+                      "value": "Nein, ohne Adresse"
+                    }
+                  ]
+                },
+                {
+                  "label": "Sachbearbeiterdaten",
+                  "inputType": "text",
+                  "key": "bescheide_sbd"
+                },
+                {
+                  "label": "Erläuterungstext und Rechtsbehelfsbelehrung",
+                  "inputType": "text",
+                  "key": "bescheide_erl"
+                },{
+                  "label": "Vorspann",
+                  "inputType": "text",
+                  "key": "bescheide_pre"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

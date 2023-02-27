@@ -1,0 +1,213 @@
+[
+  {
+    "fields": [
+      {
+        "key": "tarifaenderung",
+        "label": "Ist vor dem Lauf der Jahresveranlagung noch eine Tarifgrößenänderung im KM-StA einzugeben?",
+        "inputType": "radio",
+        "value": "",
+        "options": [
+          {
+            "value": "Ja, muss im KM-StA von Rechenzentrum hinterlegt werden",
+            "fields": [
+              {
+                "key": "tarifaenderung_select",
+                "label": "Wie möchten Sie die Tarifgrößenänderung angeben?",
+                "inputType": "radio",
+                "value": "",
+                "options": [
+                  {
+                    "value": "Tabelleneingabe",
+                    "fields": [
+                      {
+                        "key": "tarifaenderung_select_table",
+                        "inputType": "table",
+                        "addable": true,
+                        "fields": [
+                          {
+                            "key": "bezeichnung",
+                            "label": "Tarifbezeichnung"
+                          },
+                          {
+                            "key": "betragalt",
+                            "type": "number",
+                            "conditions": {
+                              "step": 0.01
+                            },
+                            "label": "Tarifbetrag bisher",
+                            "endAdornment": "€"
+                          },
+                          {
+                            "key": "betragneu",
+                            "type": "number",
+                            "conditions": {
+                              "step": 0.01
+                            },
+                            "label": "Tarifbetrag neu",
+                            "endAdornment": "€"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "value": "Dateiupload",
+                    "fields": [
+                      {
+                        "label": "Excel- oder PDF-Datei mit Tarifänderungen hochladen",
+                        "key": "tarifaenderung_select_file",
+                        "inputType": "file"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "value": "Nein"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "fields": [
+      {
+        "key": "jahresbescheide",
+        "label": "Sollen Jahresbescheide zu dieser Einnahmeart erstellt werden?",
+        "inputType": "radio",
+        "value": "",
+        "options": [
+          {
+            "value": "Ja",
+            "fields": [
+              {
+                "key": "jahresbescheide_nullbescheide",
+                "label": "Beim Druck der Jahresbescheide, ist noch eine Entscheidung in Bezug auf die Erstellung von Bescheiden mit einer Festsetzung von 0,00 € zu treffen:",
+                "inputType": "radio",
+                "value": "",
+                "options": [
+                  {
+                    "value": "Alle Bescheide inkl. Nullbescheide erstellen"
+                  },
+                  {
+                    "value": "Alle Bescheide ohne Nullbescheide erstellen"
+                  }
+                ]
+              },
+              {
+                "key": "jahresbescheide_vorspann",
+                "label": "Soll ein anderer / neuer Text wie bisher im KM-V als Vorspann gedruckt werden (z.B. Erläuterung bei einer Tarifänderung)?",
+                "inputType": "radio",
+                "value": "",
+                "options": [
+                  {
+                    "value": "Ja",
+                    "fields": [
+                      {
+                        "key": "jahresbescheide_vorspann_text",
+                        "label": "Vorspann"
+                      }
+                    ]
+                  },
+                  {
+                    "value": "Nein"
+                  }
+                ]
+              },
+              {
+                "key": "jahresbescheide_kuv",
+                "label": "Welche Kuvertierung soll verwendet werden?",
+                "inputType": "radio",
+                "value": "",
+                "options": [
+                  {
+                    "value": "nicht kuvertiert"
+                  },
+                  {
+                    "value": "geschlossen kuvertiert"
+                  },
+                  {
+                    "value": "geschlossen kuvertiert (direkte Posteinlieferung)",
+                    "fields": [
+                      {
+                        "key": "jahresbescheide_kuv_hinweis",
+                        "value": false,
+                        "text": [
+                          {
+                            "text": "Hinweis:",
+                            "margin": 2
+                          },
+                          {
+                            "text": "Auf Wunsch übernehmen wir für Sie auch die unmittelbare Posteinlieferung. Diese Option erfordert eine vorherige förmliche Bestellung/Beauftragung."
+                          },
+                          {
+                            "text": "Gerne erhalten Sie hierüber ein persönliches Angebot für unser Produkt Outputmanagement.Briefdienst Veranlagung."
+                          },
+                          {
+                            "linkTo": "mailto:kundenmanagement@komm.one",
+                            "linkText": "Kundenmanagement@Komm.ONE",
+                            "text": "Bei Interesse erreichen Sie unser Kundenmanagement unter Kundenmanagement@Komm.ONE."
+                          },
+                          {
+                            "text": "Die Bestellung muss mindestens 4 Wochen vor der Jahressollstellung erfolgen."
+                          }
+                        ],
+                        "label": "Hinweis zur Kenntnis genommen",
+                        "inputType": "checkbox"
+                      }
+                    ]
+                  },
+                  {
+                    "value": "geschlossen kuvertiert mit Beilage"
+                  },
+                  {
+                    "value": "geschlossen kuvertiert mit Beilage (direkte Posteinlieferung)",
+                    "fields": [
+                      {
+                        "key": "jahresbescheide_kuv_hinweis",
+                        "value": false,
+                        "text": [
+                          {
+                            "text": "Hinweis:",
+                            "margin": 2
+                          },
+                          {
+                            "text": "Auf Wunsch übernehmen wir für Sie auch die unmittelbare Posteinlieferung. Diese Option erfordert eine vorherige förmliche Bestellung/Beauftragung."
+                          },
+                          {
+                            "text": "Gerne erhalten Sie hierüber ein persönliches Angebot für unser Produkt Outputmanagement.Briefdienst Veranlagung."
+                          },
+                          {
+                            "linkTo": "mailto:kundenmanagement@komm.one",
+                            "linkText": "Kundenmanagement@Komm.ONE",
+                            "text": "Bei Interesse erreichen Sie unser Kundenmanagement unter Kundenmanagement@Komm.ONE."
+                          },
+                          {
+                            "text": "Die Bestellung muss mindestens 4 Wochen vor der Jahressollstellung erfolgen."
+                          }
+                        ],
+                        "label": "Hinweis zur Kenntnis genommen",
+                        "inputType": "checkbox"
+                      }
+                    ]
+                  },
+                  {
+                    "value": "offen kuvertiert"
+                  },
+                  {
+                    "value": "offen kuvertiert mit Beilage"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "value": "Nein"
+          }
+        ]
+      }
+    ]
+  }
+]
